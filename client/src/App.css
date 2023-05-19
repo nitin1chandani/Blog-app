@@ -98,4 +98,16 @@ img {
   div.post {
     grid-template-columns: 1fr;
   }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p.info {
+    font-size: 0.8rem;
+  }
+
+  p.summary {
+    font-size: 0.9rem;
+  }
 }
