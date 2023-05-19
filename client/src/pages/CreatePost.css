@@ -1,0 +1,51 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin: 0 auto;
+}
+
+input[type="title"],
+input[type="summary"],
+input[type="file"],
+.ReactQuill {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="title"]::placeholder,
+input[type="summary"]::placeholder {
+  color: #999;
+}
+
+input[type="title"]::placeholder {
+  margin-bottom: 5px;
+}
+
+.ReactQuill {
+  height: 400px; /* Adjust the height as needed */
+}
+
+button {
+  background-color: #ff4081;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #ff1565;
+}
+
+button:focus {
+  outline: none;
+}
