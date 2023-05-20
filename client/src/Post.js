@@ -1,32 +1,32 @@
-import React from "react";
+import { formatISO9075 } from "date-fns";
+import { Link } from "react-router-dom";
 
-const post = () => {
+export default function Post({
+  _id,
+  title,
+  summary,
+  cover,
+  content,
+  createdAt,
+  author,
+}) {
   return (
     <div className="post">
       <div className="image">
-        <img
-          src="https://techcrunch.com/wp-content/uploads/2023/05/elon-musk-sam-altman.jpg?w=850&h=492&crop=1"
-          alt=""
-        />
+        <Link to={`/post/${_id}`}>
+          <img src={"http://localhost:4000/" + cover} alt="" />
+        </Link>
       </div>
       <div className="texts">
-        <h2>
-          Elon Musk used to say he put $100M in OpenAI, but now it’s $50M: Here
-          are the receipts
-        </h2>
+        <Link to={`/post/${_id}`}>
+          <h2>{title}</h2>
+        </Link>
         <p className="info">
-          <a href="" className="author">
-            Nitin Chandani
-          </a>
-          <time>2023-01-06 16:45</time>
+          <a className="author">{author?.username || "Unknown"}</a>
+          <time>{formatISO9075(new Date(createdAt))}</time>
         </p>
-        <p className="summary">
-          Years of tax filings give the most complete picture yet of OpenAI’s
-          early finances
-        </p>
+        <p className="summary">{summary}</p>
       </div>
     </div>
   );
-};
-
-export default post;
+}
