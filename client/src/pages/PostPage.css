@@ -1,0 +1,52 @@
+.post-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post-page h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.post-page time {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.post-page .author {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.post-page .edit-row {
+  margin-bottom: 20px;
+}
+
+.post-page .edit-btn {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.post-page .edit-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.post-page .edit-btn svg {
+  margin-right: 5px;
+}
+
+.post-page .content {
+  line-height: 1.6;
+}
